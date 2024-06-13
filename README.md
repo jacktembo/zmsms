@@ -11,42 +11,41 @@ To install ZMSMS, simply clone the repository:
 ```sh
 git clone https://github.com/jacktembo/zmsms.git
 Usage
-Initialization
+## Initialization
 To use the ZMSMS client, you need to initialize it with your username and password:
 
-python
-Copy code
 from zmsms import SMSClient
 
 username = 'your_username'
 password = 'your_password'
 client = SMSClient(username, password)
-Sending SMS
+
+## Sending SMS
 You can send an SMS message to one or more phone numbers using the send_sms method:
 
-python
-Copy code
 message = 'Hello, this is a test message.'
 sender_id = 'YourSenderID'
 phone_numbers = ['+260971234567', '+260976543210']
 
 response = client.send_sms(message, sender_id, phone_numbers)
 print(response)
-Checking Balance
+
+
+## Checking Balance
 You can check the balance of your account using the check_balance method:
 
-python
-Copy code
 response = client.check_balance()
 print(response)
-Listing Sender IDs
+
+
+## Listing Sender IDs
 You can list the available sender IDs using the list_sender_ids method:
 
-python
-Copy code
 response = client.list_sender_ids()
 print(response)
-API Reference
+
+
+# API Reference
 send_sms(message: str, sender_id: str, phone_numbers: list) -> dict
 Send an SMS message to one or more phone numbers.
 
