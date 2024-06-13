@@ -1,5 +1,4 @@
-markdown
-Copy code
+
 # ZMSMS - Zambia SMS Gateway API Python Client
 
 ZMSMS is a Python client library for the Zambia SMS Gateway API. This library allows you to send SMS messages, check your account balance, and list available sender IDs using the Zambia SMS Gateway service.
